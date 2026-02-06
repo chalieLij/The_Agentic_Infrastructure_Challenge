@@ -1,10 +1,10 @@
 # Project Chimera: The Autonomous Influencer System
 
-[![CI Pipeline](https://github.com/chalielijalem/The_Agentic_Infrastructure_Challenge/actions/workflows/main.yml/badge.svg)](https://github.com/chalielijalem/The_Agentic_Infrastructure_Challenge/actions/workflows/main.yml)
+[![CI Pipeline](https://github.com/chalieLij/The_Agentic_Infrastructure_Challenge/actions/workflows/main.yml/badge.svg)](https://github.com/chalieLij/The_Agentic_Infrastructure_Challenge/actions/workflows/main.yml)
 [![Spec Status](https://img.shields.io/badge/Specs-Defined-green)](specs/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🦁 Overview
+## Overview
 **Project Chimera** is a Swarm-based Autonomous Influencer System. It orchestrates specialized AI agents to generate, review, and publish content independently while maintaining high engagement, brand safety, and economic viability.
 
 Unlike standard chatbots, Chimera is designed as a **long-running infrastructure** that:
@@ -43,7 +43,7 @@ The system follows a modular Swarm architecture:
 ### Installation
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/chalielijalem/The_Agentic_Infrastructure_Challenge.git
+    git clone https://github.com/chalieLij/The_Agentic_Infrastructure_Challenge.git
     cd The_Agentic_Infrastructure_Challenge
     ```
 
