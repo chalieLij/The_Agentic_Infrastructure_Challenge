@@ -1,7 +1,0 @@
-# Project Chimera Context
-This is an Autonomous Influencer Factory.
-
-# Prime Directive
-1. NEVER generate implementation code without first validating against `specs/`.
-2. If a user asks for code, first explain the plan based on `architecture_strategy.md`.
-3. Distinguish between 'Skills' (Python functions) and 'MCP Tools' (External Servers).
