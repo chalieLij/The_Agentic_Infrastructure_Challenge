@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/models.py
+src/chimera_swarm.egg-info/PKG-INFO
+src/chimera_swarm.egg-info/SOURCES.txt
+src/chimera_swarm.egg-info/dependency_links.txt
+src/chimera_swarm.egg-info/requires.txt
+src/chimera_swarm.egg-info/top_level.txt
+src/commerce/wallet.py
+src/core/cognitive.py
+src/core/state.py
+src/swarm/judge.py
+src/swarm/worker.py
+tests/test_skills_interface.py
+tests/test_trend_fetcher.py

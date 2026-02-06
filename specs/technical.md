@@ -28,6 +28,70 @@ The `VideoMetadata` object represents the structured data required to render and
 }
 ```
 
+### Agent Task Schema (JSON)
+The structure for passing data between Planner and Worker.
+
+```json
+{
+  "task_id": "uuid-v4-string",
+  "task_type": "generate_content | reply_comment | execute_transaction",
+  "priority": "high | medium | low",
+  "context": {
+    "goal_description": "string",
+    "persona_constraints": ["string"],
+    "required_resources": ["mcp://twitter/mentions/123", "mcp://memory/recent"]
+  },
+  "assigned_worker_id": "string",
+  "created_at": "timestamp",
+  "status": "pending | in_progress | review | complete"
+}
+```
+
+### AgentPersona Model
+Used to parse SOUL.md files.
+
+*   **Source**: Markdown file with YAML frontmatter.
+*   **Frontmatter Fields**:
+    *   `name`: `str`
+    *   `id`: `str`
+    *   `voice_traits`: `List[str]`
+    *   `directives`: `List[str]`
+*   **Body Content**: Parsed into a `backstory` field (`str`).
+
+## MCP Tool Interfaces
+
+### post_content
+Publishes text and media to a connected social platform.
+
+```json
+{
+  "name": "post_content",
+  "description": "Publishes text and media to a connected social platform.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "platform": {
+        "type": "string", 
+        "enum": ["twitter", "instagram", "threads"]
+      },
+      "text_content": {
+        "type": "string",
+        "description": "The body of the post/tweet."
+      },
+      "media_urls": {
+        "type": "array", 
+        "items": {"type": "string"}
+      },
+      "disclosure_level": {
+        "type": "string",
+        "enum": ["automated", "assisted", "none"]
+      }
+    },
+    "required": ["platform", "text_content"]
+  }
+}
+```
+
 ## API Contracts
 
 ### Trend Fetcher Service

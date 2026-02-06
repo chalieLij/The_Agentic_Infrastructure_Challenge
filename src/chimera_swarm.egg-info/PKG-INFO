@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: chimera-swarm
+Version: 0.1.0
+Summary: Autonomous Influencer System
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: redis>=5.0.0
+Requires-Dist: mcp>=0.1.0
+Requires-Dist: coinbase-agentkit>=0.0.1
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
