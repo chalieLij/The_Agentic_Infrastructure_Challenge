@@ -6,8 +6,12 @@ setup:
 
 # Run pytest inside a Docker container
 test:
-	docker build -t chimera-test .
-	docker run --rm chimera-test pytest -v
+	docker build -t chimera .
+	docker run --rm chimera pytest -v
+
+# Placeholder for spec alignment checking
+spec-check:
+	@echo 'Checking spec alignment...'
 
 # Run ruff for linting
 lint:

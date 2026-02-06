@@ -1,0 +1,21 @@
+# CodeRabbit Configuration
+language: "en-US"
+enable_chat: true
+
+reviews:
+  high_level_summary: true
+  poem: false
+  
+  instructions: |
+    Perform a comprehensive code review focusing on the following key areas:
+    
+    1. **Check for Spec Alignment**:
+       - Verify that implementation details match the definitions in `specs/technical.md`, `specs/functional.md`, and individual skill READMEs.
+       - Ensure all JSON schemas for inputs/outputs are strictly adhered to.
+    
+    2. **Check for Security Vulnerabilities**:
+       - Identify potential risks such as hardcoded credentials, unvalidated inputs, or insecure dependencies.
+       - Ensure `Daily Spend Limits` and critical financial logic in `src/commerce` are robustly protected.
+    
+    3. **General Best Practices**:
+       - Check for Pythonic code, proper error handling, and sufficient test coverage.
