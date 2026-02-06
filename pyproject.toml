@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chimera-swarm"
+version = "0.1.0"
+description = "Autonomous Influencer System"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0.0",
+    "redis>=5.0.0",
+    "mcp>=0.1.0",
+    "coinbase-agentkit>=0.0.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

@@ -1,4 +1,11 @@
-# Copilot Instructions
+# Project Context
+This is Project Chimera, an autonomous influencer system.
+
+# The Prime Directive
+NEVER generate code without checking specs/ first.
+
+# Traceability
+Explain your plan before writing code.
 
 # AI Fluency Trigger Rules and Response Handling
 
