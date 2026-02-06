@@ -2,7 +2,10 @@
 This is Project Chimera, an autonomous influencer system.
 
 # The Prime Directive
-NEVER generate code without checking specs/ first.
+1. NEVER generate code without checking specs/ first.
+2. If I ask for code, refuse to write it until I confirm I have read the spec.
+3. Distinguish between 'Skills' (Python functions) and 'MCP Tools' (External Servers).
+
 
 # Traceability
 Explain your plan before writing code.
