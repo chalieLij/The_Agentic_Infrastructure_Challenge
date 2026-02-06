@@ -15,6 +15,8 @@ class TaskStatus(str, Enum):
     COMPLETED = "completed"
     FAILED = "failed"
     REVIEW_READY = "review_ready"
+    REJECTED = "rejected"
+    HITL_REVIEW = "hitl_review"
 
 class Task(BaseModel):
     id: UUID = Field(default_factory=uuid4)
